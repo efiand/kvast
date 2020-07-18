@@ -1,0 +1,54 @@
+.press {
+	padding-top: 80px;
+	background-color: #ede5d8;
+}
+
+.press__quote {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin: 0 0 3px;
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: 7px;
+		left: -106px;
+		width: 41px;
+		height: 31px;
+		background-image: url("../img/quotes.png");
+		background-size: cover;
+	}
+
+	p {
+		width: 100%;
+		margin: 0 110px 34px 0;
+	}
+
+	cite {
+		order: 3;
+		margin-top: 10px;
+		margin-right: 2px;
+		font-style: normal;
+	}
+}
+
+.press__link {
+	color: fade(@color-black, 20);
+	border-color: @color-gray;
+
+	&:hover,
+	&:focus {
+		color: #ffffff;
+		background-color: @color-gray;
+		border-color: @color-gray;
+	}
+
+	&:active {
+		color: fade(#ffffff, 30);
+		background-color: #8f8a81;
+		border-color: #8f8a81;
+	}
+}

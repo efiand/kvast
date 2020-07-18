@@ -1,0 +1,41 @@
+.button {
+	padding: 13px 20px;
+	font-weight: 700;
+	line-height: 20px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #ffffff;
+	background-color: @color-accent;
+	border: 2px solid @color-accent;
+
+	&:hover,
+	&:focus {
+		background-color: @color-accent-hover;
+		border-color: @color-accent-hover;
+	}
+
+	&:active {
+		color: fade(#ffffff, 30);
+		background-color: @color-accent-hover;
+		border-color: @color-accent-hover;
+	}
+
+	&--alter {
+		color: @color-accent;
+		background-color: transparent;
+		border-color: currentColor;
+
+		&:hover,
+		&:focus {
+			color: @color-accent-hover;
+			background-color: transparent;
+			border-color: currentColor;
+		}
+
+		&:active {
+			color: fade(@color-accent-hover, 30);
+			background-color: transparent;
+			border-color: currentColor;
+		}
+	}
+}

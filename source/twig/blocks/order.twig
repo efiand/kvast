@@ -1,0 +1,57 @@
+<section class="order section section--alter">
+	<div class="container">
+		<h2 class="heading section__heading">Заказать</h2>
+		<p class="order__text">Не ждите пока нас отрекламируют, как Вятский квас, и мы поднимем цены! Закажите настоящий крафтовый квас сейчас. При заказе от 10 баррелей — скидка 10%.</p>
+		<form class="form order__form" action="https://echo.htmlacademy.ru">
+			<div class="form__group">
+				<label>
+					Представьтесь:
+					<input class="form__field" name="username" type="text">
+				</label>
+			</div>
+			<div class="form__groups">
+				<div class="form__group">
+					<label>
+						Номер телефона:
+						<input class="form__field" name="phone" type="tel">
+					</label>
+				</div>
+				<div class="form__group">
+					<label>
+						Доп. номер:
+						<input class="form__field" name="phone_2" type="tel">
+					</label>
+				</div>
+			</div>
+			<div class="form__group">
+				<label>
+					Email:
+					<input class="form__field" name="mail" type="email">
+				</label>
+			</div>
+			<div class="form__group">
+				<label for="choose-volume">Объём заказа:</label>
+				<div class="form__choose">
+					<select class="form__field" name="volume_id" id="choose-volume">
+						<option value="1">До 5 баррелей в неделю</option>
+						<option value="2" selected>От 5 до 10 баррелей в неделю</option>
+						<option value="3">От 10 баррелей в неделю</option>
+					</select>
+				</div>
+			</div>
+			<div class="form__group">
+				<label>
+					Доп. комментарий:
+					<textarea class="form__field form__field--message" name="message" spellcheck="false"></textarea>
+				</label>
+			</div>
+			<div class="form__group">
+				<label>
+					<input class="form__check-input visually-hidden" name="subscribe_flag" type="checkbox" checked>
+					<span class="form__check">Я согласен получать квасную рассылку</span>
+				</label>
+			</div>
+			<button class="button form__button" type="submit">Отправить заказ</button>
+		</form>
+	</div>
+</section>

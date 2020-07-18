@@ -1,0 +1,37 @@
+.table {
+	width: 100%;
+	line-height: 30px;
+
+	th {
+		vertical-align: top;
+		padding: 0 16px 30px 0;
+		font-weight: 700;
+		font-size: 11px;
+		text-transform: uppercase;
+		text-align: left;
+		color: @color-gray;
+		border-bottom: 1px solid #e5e5e5;
+
+		&:last-child {
+			padding-right: 0;
+			text-align: right;
+		}
+	}
+
+	td {
+		vertical-align: top;
+		padding: 16px 16px 18px 0;
+		color: @color-text;
+		border-bottom: 1px solid #e5e5e5;
+
+		&:first-child {
+			font-weight: 700;
+			color: @color-black;
+		}
+
+		&:last-child {
+			padding-right: 0;
+			text-align: right;
+		}
+	}
+}

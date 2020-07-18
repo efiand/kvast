@@ -1,0 +1,43 @@
+.history {
+	margin: -14px 0 0;
+}
+
+.history__name {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.history__source {
+	margin-bottom: 20px;
+	color: #444444;
+
+	a {
+		color: @color-accent;
+
+		&:hover,
+		&:focus {
+			color: @color-accent-hover;
+		}
+
+		&:active {
+			color: #cab7a2;
+		}
+	}
+}
+
+.history__content {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+	margin: 0 0 60px;
+
+	&:last-child {
+		margin-bottom: 4px;
+	}
+}
+
+.history__img {
+	flex-shrink: 0;
+	margin: 11px 0 0 110px;
+}
